@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 min-h-screen flex flex-col items-center justify-center p-6 font-sans overflow-x-hidden">
+
+    <!-- Heading -->
+    <h1 class="text-5xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+        Advanced 3D Card
+    </h1>
+
+    <!-- Card Container -->
+    <div class="grid grid-cols-1 gap-10 max-w-7xl">
+
+        <!-- Card 1: Glass Morphism + Tilt 3D -->
+        <div class="card-tilt relative h-96 w-96 rounded-3xl overflow-hidden group cursor-pointer">
+            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-600/20 backdrop-blur-xl border border-white/10 rounded-3xl p-8 transform transition-all duration-700 group-hover:scale-105" 
+                 style="transform-style: preserve-3d;">
+                <div class="relative z-10" style="transform: translateZ(30px)">
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fas fa-atom text-4xl text-cyan-300"></i>
+                        <span class="bg-white/10 px-4 py-1 rounded-full text-sm">Interactive</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">3D Tilt Glass Card</h3>
+                    <p class="text-gray-300 mb-6">Mouse movement ke sath card tilt hoga. Try moving cursor around</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-white/20 hover:bg-white/30 text-white px-6 py-2 rounded-full transition">View</button>
+                        <button class="border border-white/30 hover:bg-white/10 text-white px-6 py-2 rounded-full transition">Demo</button>
+                    </div>
+                </div>
+                <!-- Floating elements -->
+                <div class="absolute -top-10 -right-10 w-20 h-20 bg-cyan-500/20 rounded-full blur-xl"></div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-purple-500/10 rounded-full blur-xl"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
