@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid Practice</title>
+</head>
+
+<body class="min-h-screen bg-gray-200 grid grid-rows-[auto_1fr_auto]">
+
+  <!-- header -->
+  <header class="bg-blue-600 text-white p-6 text-xl font-bold">
+    Header (auto height)
+  </header>
+
+  <!-- main area -->
+  <main class="grid grid-cols-12 gap-4 p-4 bg-gray-100">
+
+    <!-- left sidebar -->
+    <aside class="col-span-2 row-span-2 bg-purple-400 text-white p-4">
+      Left Sidebar <br>(row-span-2)
+    </aside>
+
+    <!-- center content -->
+    <section class="col-span-8 bg-white p-4 grid grid-rows-2 gap-4">
+
+      <!-- top content -->
+      <div class="bg-green-300 p-4">
+        Hero / Main Content
+      </div>
+
+      <!-- nested grid -->
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-yellow-300 p-4">Card 1</div>
+        <div class="bg-yellow-400 p-4">Card 2</div>
+        <div class="bg-yellow-500 p-4">Card 3</div>
+      </div>
+
+    </section>
+
+    <!-- right sidebar -->
+    <aside class="col-span-2 bg-pink-400 text-white p-4">
+      Right Sidebar
+    </aside>
+
+    <!-- bottom content -->
+    <section class="col-span-10 bg-indigo-300 p-4">
+      Wide Section (col-span-10)
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white p-4 text-center">
+    Footer (auto height)
+  </footer>
+
+</body>
+</html>
