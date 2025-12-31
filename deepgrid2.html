@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black p-4 text-white text-sm">
+
+<div class="max-w-7xl mx-auto">
+
+    <!-- MAIN 3 COLUMN GRID -->
+    <div class="grid grid-cols-12 gap-4">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="hidden lg:block lg:col-span-3">
+            <div class="bg-gray-900 h-screen rounded-xl sticky top-4 p-4 space-y-6">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-gray-800 h-12 w-12 rounded-full"></div>
+                    <span>Twitter Logo</span>
+                </div>
+
+                <!-- Navigation -->
+                <div class="space-y-3">
+                    <div class="bg-gray-800 h-10 rounded flex items-center px-4">Home</div>
+                    <div class="bg-gray-800 h-10 rounded flex items-center px-4">Explore</div>
+                    <div class="bg-gray-800 h-10 rounded flex items-center px-4">Notifications</div>
+                    <div class="bg-gray-800 h-10 rounded flex items-center px-4">Messages</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MAIN FEED -->
+        <div class="col-span-12 lg:col-span-6">
+
+            <!-- HEADER -->
+            <div class="bg-gray-900 h-16 rounded-t-xl mb-4 flex items-center px-4">
+                Home / For You
+            </div>
+
+            <!-- COMPOSE TWEET -->
+            <div class="bg-gray-900 p-4 rounded-xl mb-4">
+
+                <div class="grid grid-cols-12 gap-4">
+
+                    <!-- User Avatar -->
+                    <div class="col-span-1">
+                        <div class="bg-gray-800 h-12 w-12 rounded-full"></div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="col-span-11 space-y-4">
+
+                        <div class="bg-gray-800 h-12 rounded flex items-center px-4">
+                            What's happening?
+                        </div>
+
+                        <!-- Icons + Button -->
+                        <div class="grid grid-cols-2">
+
+                            <!-- Icons -->
+                            <div class="grid grid-cols-4 gap-2">
+                                <div class="bg-gray-800 h-8 rounded flex items-center justify-center">Img</div>
+                                <div class="bg-gray-800 h-8 rounded flex items-center justify-center">GIF</div>
+                                <div class="bg-gray-800 h-8 rounded flex items-center justify-center">Poll</div>
+                                <div class="bg-gray-800 h-8 rounded flex items-center justify-center">Emoji</div>
+                            </div>
+
+                            <!-- Tweet Button -->
+                            <div class="flex justify-end">
+                                <div class="bg-blue-600 h-10 w-24 rounded-full flex items-center justify-center">
+                                    Tweet
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- TWEETS FEED -->
+            <div class="space-y-4">
+
+                <!-- TWEET 1 -->
+                <div class="bg-gray-900 rounded-xl p-4">
+
+                    <div class="grid grid-cols-12 gap-4">
+
+                        <!-- Avatar -->
+                        <div class="col-span-1">
+                            <div class="bg-gray-800 h-12 w-12 rounded-full"></div>
+                        </div>
+
+                        <!-- Tweet Content -->
+                        <div class="col-span-11 space-y-3">
+
+                            <!-- Username + Time -->
+                            <div class="flex justify-between text-gray-400">
+                                <span>@username</span>
+                                <span>2h</span>
+                            </div>
+
+                            <!-- Tweet Text -->
+                            <div class="bg-gray-800 h-6 rounded flex items-center px-3">
+                                This is tweet text content
+                            </div>
+
+                            <!-- Tweet Image -->
+                            <div class="bg-gray-800 h-48 rounded-lg flex items-center justify-center">
+                                Tweet Image / Video
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="grid grid-cols-4 gap-2 text-center text-gray-400">
+                                <div class="bg-gray-800 h-8 rounded">Reply</div>
+                                <div class="bg-gray-800 h-8 rounded">Retweet</div>
+                                <div class="bg-gray-800 h-8 rounded">Like</div>
+                                <div class="bg-gray-800 h-8 rounded">Share</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TWEET 2 (Text Only) -->
+                <div class="bg-gray-900 rounded-xl p-4">
+
+                    <div class="grid grid-cols-12 gap-4">
+
+                        <div class="col-span-1">
+                            <div class="bg-gray-800 h-12 w-12 rounded-full"></div>
+                        </div>
+
+                        <div class="col-span-11 space-y-3">
+                            <div class="text-gray-400">@another_user · 5h</div>
+                            <div class="bg-gray-800 h-6 rounded w-3/4"></div>
+                            <div class="bg-gray-800 h-6 rounded w-1/2"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="hidden lg:block lg:col-span-3">
+            <div class="bg-gray-900 h-screen rounded-xl sticky top-4 p-4 space-y-6">
+
+                <!-- Search -->
+                <div class="bg-gray-800 h-10 rounded-full flex items-center px-4">
+                    Search Twitter
+                </div>
+
+                <!-- Trending -->
+                <div class="bg-gray-900 rounded-xl p-4">
+                    <h3 class="mb-4 font-semibold">Trends for you</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-800 h-16 rounded flex items-center px-4">#WebDevelopment</div>
+                        <div class="bg-gray-800 h-16 rounded flex items-center px-4">#TailwindCSS</div>
+                        <div class="bg-gray-800 h-16 rounded flex items-center px-4">#AI</div>
+                    </div>
+                </div>
+
+                <!-- Who to follow -->
+                <div class="bg-gray-900 rounded-xl p-4">
+                    <h3 class="mb-4 font-semibold">Who to follow</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-800 h-20 rounded flex items-center px-4">@user_one</div>
+                        <div class="bg-gray-800 h-20 rounded flex items-center px-4">@user_two</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
