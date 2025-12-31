@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black p-4 text-white text-sm">
+
+    <!-- PAGE CONTAINER -->
+    <div class="max-w-7xl mx-auto">
+
+        <!-- ================= HEADER ================= -->
+        <div class="grid grid-cols-12 gap-2 mb-6 h-16">
+
+            <!-- Menu / Logo -->
+            <div class="col-span-1 bg-gray-800 rounded flex items-center justify-center">
+                ☰
+            </div>
+
+            <!-- Search Bar -->
+            <div class="col-span-6 bg-gray-800 rounded flex items-center justify-center">
+                Search Bar
+            </div>
+
+            <!-- Profile / Icons -->
+            <div class="col-span-5 bg-gray-800 rounded flex items-center justify-center gap-4">
+                🔔 📹 👤
+            </div>
+
+        </div>
+
+        <!-- ================= MAIN AREA ================= -->
+        <div class="grid grid-cols-12 gap-6">
+
+            <!-- ========== SIDEBAR ========== -->
+            <div class="hidden md:block md:col-span-2">
+                <div class="bg-gray-900 h-[600px] rounded p-3 space-y-2 text-xs">
+                    <p>🏠 Home</p>
+                    <p>🔥 Shorts</p>
+                    <p>📺 Subscriptions</p>
+                    <p>📚 Library</p>
+                    <p class="text-gray-400 mt-4">Hidden on mobile</p>
+                </div>
+            </div>
+
+            <!-- ========== MAIN CONTENT ========== -->
+            <div class="col-span-12 md:col-span-10">
+
+                <!-- VIDEO PLAYER -->
+                <div class="bg-gray-900 h-[400px] rounded-lg mb-6 flex items-center justify-center text-lg">
+                    ▶ Main Video Player
+                </div>
+
+                <!-- VIDEO INFO -->
+                <div class="grid grid-cols-12 gap-4 mb-8">
+
+                    <!-- Title + Channel -->
+                    <div class="col-span-8">
+                        <div class="bg-gray-800 h-8 rounded mb-2 flex items-center px-3">
+                            Video Title Goes Here
+                        </div>
+                        <div class="bg-gray-800 h-6 rounded w-3/4 flex items-center px-3 text-xs">
+                            Channel Name • Views • Time
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="col-span-4">
+                        <div class="grid grid-cols-5 gap-2 text-xs text-center">
+                            <div class="bg-gray-800 h-10 rounded flex items-center justify-center">👍</div>
+                            <div class="bg-gray-800 h-10 rounded flex items-center justify-center">👎</div>
+                            <div class="bg-gray-800 h-10 rounded flex items-center justify-center">↗ Share</div>
+                            <div class="bg-gray-800 h-10 rounded flex items-center justify-center">💾 Save</div>
+                            <div class="bg-gray-800 h-10 rounded flex items-center justify-center">⋯</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RELATED VIDEOS -->
+                <div>
+
+                    <!-- Section Title -->
+                    <div class="bg-gray-800 h-6 rounded w-48 mb-4 flex items-center px-3 text-xs">
+                        Related Videos
+                    </div>
+
+                    <!-- Cards Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                        <div class="bg-gray-900 h-48 rounded flex items-center justify-center">
+                            Video Card 1
+                        </div>
+
+                        <div class="bg-gray-900 h-48 rounded flex items-center justify-center">
+                            Video Card 2
+                        </div>
+
+                        <div class="bg-gray-900 h-48 rounded flex items-center justify-center">
+                            Video Card 3
+                        </div>
+
+                        <div class="bg-gray-900 h-48 rounded flex items-center justify-center">
+                            Video Card 4
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
